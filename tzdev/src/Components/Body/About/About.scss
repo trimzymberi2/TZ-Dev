@@ -1,0 +1,53 @@
+.About-cont{
+    padding: var(--def-padding);
+    flex-direction: column;
+    padding-top: 5em;
+    gap: 20px;
+    .about-frst-content{
+        .about-frst-banner{
+            width: 40%;
+            gap: 20px;
+            h1{
+                font-size: 48px;
+            }
+            img{
+                width: 250px;
+                height: 250px;
+                border-radius: 1000px;
+            }
+        }
+        .about-scnd-banner{
+            width: 60%;
+            flex-direction: column;
+            gap: 10px;
+            p{
+                text-align: center;
+                width: 80%;
+                color: #1f2937;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .About-cont{
+        text-align: center;
+        .about-frst-content{
+            flex-direction: column;
+            gap: 30px;
+            .about-frst-banner{
+                width: 100%;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .about-scnd-banner{
+                width: 100%;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

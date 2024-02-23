@@ -1,0 +1,116 @@
+.contact-cnt{
+    padding: var(--def-padding);
+    justify-content: space-between;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    background-color: #fbf9f9;
+        .cntct-frst-banner{
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+        h1{
+            font-size: 48px;
+            font-family: 'PopinsBold';
+        }
+        p{
+            font-family: 'PopinsMedium';
+            color: var(--font-color);
+            text-align: center;
+            font-size: 24px;
+            width: 60%;
+        }
+    }
+    .cntc-scnd-wrapper{
+        width: 50%;
+        .cntc-scnd-banner{
+        flex-direction: column;
+        gap: 25px;
+            .cntc-data{
+                justify-content: left;
+                width: 100%;
+                gap: 25px;
+                h2{
+                    font-family: 'PopinsMedium';
+                    font-size: 24px;
+                    color: var(--text-color);
+                    font-weight: 500;
+                    width: 100%;
+                }
+                img{
+                    width: 40px;
+                    height: 40px;
+                    
+                }
+            }
+        }
+    }
+}   
+
+@media only screen and (max-width:1024px){
+    .contact-cnt{
+        flex-direction: column;
+        gap: 50px;
+            .cntct-frst-banner{
+                    width: 100%;
+                    p{
+                        width: 100%;
+                    }
+            }
+            .cntc-scnd-wrapper{
+                width: 100%;
+            }
+    }
+}
+@media only screen and (max-width:425px){
+    .contact-cnt{
+    flex-direction: column;
+    gap: 50px;
+        .cntct-frst-banner{
+            width: 100%;
+        }
+        .cntc-scnd-wrapper{
+            width: 100%;
+            .cntc-scnd-banner{
+                .cntc-data{
+                    h2{
+                        font-size: 18px;
+                    }
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+            
+    }
+}
+@media only screen and (max-width:375px){
+    .contact-cnt{
+    flex-direction: column;
+    gap: 50px;
+        .cntct-frst-banner{
+            h1{
+                font-size: 37px;
+            }
+            p{
+                font-size: 20px;
+            }
+
+        }
+        .cntc-scnd-wrapper{
+            .cntc-scnd-banner{
+                .cntc-data{
+                    h2{
+                        font-size: 16px;
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+            
+    }
+}

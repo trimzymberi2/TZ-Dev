@@ -1,0 +1,29 @@
+.body{
+    .Home{
+
+        section .animate{
+            transition: 1s;
+        }
+
+        .sec-1 .animate{
+            transform: translateX(-100%);
+        }
+        .sec-1.show-animate .animate{
+            transform: translateX(0);
+        }
+
+        .sec-3 .animate{
+            transform: translateX(-100%);
+        }
+        .sec-3.show-animate .animate{
+            transform: translateX(0);
+        }
+
+        .sec-6 .animate{
+            transform: translateX(-100%);
+        }
+        .sec-6.show-animate .animate{
+            transform: translateX(0);
+        }
+    }
+}

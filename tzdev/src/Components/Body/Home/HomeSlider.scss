@@ -1,0 +1,28 @@
+.homeSlider-cont{
+    margin-top: 0em;
+    padding: var(--def-padding);
+    h1{
+        text-align: center;
+    }
+    .card{
+        margin-top: 2em;
+        flex-direction: column;
+        img{
+            width: 100px;
+            height: 100px;
+            filter: drop-shadow(5px 5px 10px #555);
+            
+        }
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .homeSlider-cont{
+        h1{
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.AboutTab-cont{
+    padding: var(--def-padding);
+    margin-top: 6em;
+    width: 100%;
+    flex-direction: column;
+    ul{
+        width: 100%;
+        height: 40px;
+        .li-active{
+            color:white;
+            border-bottom: none;
+            background: #4B79A1;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #283E51, #283E51);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #283E51, #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            box-shadow: drop-shadow(5px 5px 10px #555);
+
+        }
+        li{
+            border: 1px solid #c5bebe;
+            background-color: #edebeb;
+            height: 100%;
+            width: 100%;
+            padding: 1%;
+            font-family: 'PopinsMedium';
+            color:var(--font-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            font-size: 24px;
+            text-align: center;
+            &:hover{
+                cursor: pointer;
+                color: var(--hover-color);
+            }
+        }
+    }
+    .content{
+        display: none;
+    }
+    .show-content{
+        background: #4B79A1;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #192d3f, #060a0e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 1em 0 1em 0;
+        gap: 80px;
+        width: 100%;
+        flex-wrap: wrap;
+        .about-cont{
+            gap: 30px;
+            margin-top: 4%;
+            flex-direction: column;
+            width: auto;
+            height: 200px;
+            width: 200px;
+            img{
+                border-radius: 0;
+                height: 150px;
+                width: 150px;
+                filter: drop-shadow(5px 5px 10px #555);
+
+            }
+            h1{
+                font-size: 25px;
+                color:white;
+                font-family: 'PopinsMedium';
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .AboutTab-cont{
+        ul{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 700px){
+    .AboutTab-cont{
+        ul{
+            background: none;
+            border: 1px solid #c5bebe;
+            width: 100%;
+            height: 100%;
+            margin: 1em 0 0em 0;
+            flex-direction: column;
+            border-bottom: none;
+            .li-active
+            li{
+                background: none;
+                height: 50px;
+                width: 100%;
+                &:hover{
+                    color: white;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .AboutTab-cont{
+        ul{
+            height: 100%;
+            width: 100%;
+            li{
+                font-size: 24px;
+                text-align: center;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px){
+    .AboutTab-cont{
+        ul{
+            
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+}

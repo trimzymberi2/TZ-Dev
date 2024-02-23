@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'PopinsBold';
+  src: url(./Asets/Poppins-Bold.ttf) format(woff)
+}
+
+@font-face {
+  font-family: 'PopinsMedium';
+  src: url(./Asets/Poppins-Regular.ttf) format(woff)
+}
+
+:root {
+  --font-color: #374151;
+  --text-color: #1f2937;
+  --tittle-text: 40px;
+  --desc-color: #d9d9d9;
+  --desc-text: 16px;
+  --def-padding: 2% 7%;
+  --hover-color: steelblue;
+}
+
+.tittle{
+  font-size: var(--tittle-text);
+  color: var(--font-color);
+  font-family:'PopinsBold' ;
+
+}
+
+.desc{
+  font-size: var(--desc-text);
+  color: var(--desc-color);
+  font-family:'PopinsMedium' ;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Grdtext{
+  background: linear-gradient(90deg, #DE6161, rgb(40, 55, 217));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Grdtext2{
+  background:linear-gradient(90deg, #FEB700, #D32828);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#dark{
+  background-color: #374151;
+}
+#dark .header{
+  color: white;
+}
+
+footer{
+  margin-top: auto;
+}
