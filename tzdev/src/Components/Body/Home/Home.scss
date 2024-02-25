@@ -12,7 +12,7 @@
     justify-content: flex-start;
     .home-cont{
         min-height: 100vh;
-        background: linear-gradient(90deg, rgba(52, 148, 230, 10), rgba(236, 110, 173, 0.9));
+        background: var(--banner_bg);
         padding: var(--def-padding);
         justify-content: center;
         .left-home-bnr{

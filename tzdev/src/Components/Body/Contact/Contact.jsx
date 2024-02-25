@@ -4,8 +4,15 @@ import mail from '../../images/mail.png'
 import phone from '../../images/phone.png'
 import linkedin from '../../images/linkedin.svg'
 import git from '../../images/git.png'
+import DarkMail from '../../images/Darkmail.png'
+import darkPhone from '../../images/DarkPhone.png'
+import darkGit from '../../images/darkGit.png'
+import { useTheme} from '../../Navbar/ThemeContext'
 
 export default function Contact() {
+
+const { selectedTheme } = useTheme();
+  console.log(selectedTheme);
   return (
     <div className='contact-cnt flex' id='Contact'>
         <div className='cntct-frst-banner flex'>
@@ -15,11 +22,19 @@ export default function Contact() {
         <div className='cntc-scnd-wrapper flex'>
         <div className='cntc-scnd-banner flex'>
             <div className='cntc-data flex'>
-                <img src={mail} alt="" />
+                {selectedTheme === 'light' ? (
+                    <img src={mail} alt="" />
+                ) : (
+                    <img src={DarkMail} alt="" />
+                )}
                 <h2>trimzymberi22@gmail.com</h2>
             </div>
             <div className='cntc-data flex'>
-                <img src={phone} alt="" />
+                {selectedTheme === 'light' ? (
+                    <img src={phone} alt="" />
+                ) : (
+                    <img src={darkPhone} alt="" />
+                )}
                 <h2>+38345452712</h2>
             </div>
             <div className='cntc-data flex'>
@@ -27,7 +42,11 @@ export default function Contact() {
                 <h2>Trim Zymberi</h2>
             </div>
             <div className='cntc-data flex'>
-                <img src={git} alt="" />
+                {selectedTheme === 'light' ? (
+                    <img src={git} alt="" />
+                ) : (
+                    <img src={darkGit} alt="" />
+                )}
                 <h2>trimzymberi</h2>
             </div>
         </div>

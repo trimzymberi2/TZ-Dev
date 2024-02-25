@@ -1,52 +1,32 @@
-import {React, useRef} from 'react'
-import './Navbar.scss'
-import Logo from '../images/DarkLogo.png'
-import profile from '../images/unnamed.png'
-import sun from '../images/sun.png'
-import moon from '../images/moon.png'
-import { Squash as Hamburger } from 'hamburger-react'
-import { BrowserRouter } from 'react-router-dom'
-import { HashLink as Link } from 'react-router-hash-link'
+import React, { useRef, useEffect, useState } from 'react';
+import './Navbar.scss';
+import LogoLight from '../images/DarkLogo.png';
+import LogoDark from '../images/logo.png';
+import { Squash as Hamburger } from 'hamburger-react';
+import { BrowserRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import { useTheme } from './ThemeContext';
 
 export default function Navbar() {
   const navRef = useRef();
 
   const showNavbar = () => {
-    navRef.current.classList.toggle('responsive_nav')
-  }
-    const setDarkMode = () => {
-      document.querySelector("body").setAttribute('data-theme', 'dark')
-      localStorage.setItem("selectedTheme", "dark")
-    }
-    
-    const setLightMode = () => {
-      document.querySelector("body").setAttribute('data-theme', 'light')
-      localStorage.setItem("selectedTheme", "light")
-    }
+    navRef.current.classList.toggle('responsive_nav');
+  };
 
-
-    const toggletTheme = e => {
-      if(e.target.checked) setDarkMode();
-      else setLightMode();
-    }
-  
-    const selectedTheme = localStorage.getItem("selectedTheme");
-
-    if(selectedTheme === "dark"){
-      setDarkMode()
-    }
+  const { selectedTheme, setDarkMode, setLightMode, toggletTheme } = useTheme();
 
   return (
     <BrowserRouter>
       <header className='nav-cont flex'>
-          <div className='logo flex'>
-              <h3>TZ</h3>
-              {selectedTheme === 'light' ? (
-              <img src={LogoLight} alt="" />
-            ) : (
-              <img src={LogoDark} alt="" />
-            )}
-          </div>
+        <div className='logo flex'>
+          <h3>TZ</h3>
+          {selectedTheme === 'dark' ? (
+            <img src={LogoDark} alt="" />
+          ) : (
+            <img src={LogoLight} alt="" />
+          )}
+        </div>
           <nav className='flex' ref={navRef}>
             <div className='nav-data flex'>
               <Link  onClick={showNavbar} className='link' to='#Home' smooth>

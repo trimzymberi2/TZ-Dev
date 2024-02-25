@@ -37,6 +37,7 @@ body{
   min-height: 100vh;
   background-color: var(--body_bg);
   color: var(--body_color);
+  transition: all 0.3s ease-in-out;
 }
 * {
   margin: 0;
