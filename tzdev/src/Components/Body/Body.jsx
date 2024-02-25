@@ -12,11 +12,11 @@ export default function Body() {
     <div className='body'>
       <div className='Home'>
         <Home/>
-        <HomeSlider/>
         <About/>
         <AboutTab/>
         <Projects/>
         <Contact/>
+        <HomeSlider/>
       </div>
     </div>
   )

@@ -34,10 +34,9 @@
             }
         }
         .right-home-bnr {
-            width: 40%;
-            img{
-                width: auto;
-              
+            width: 50%;
+            .animation-banner{
+                width: 80%;
             }
           }
     }
@@ -64,8 +63,9 @@
     .home-wrapper{
         margin: 1% 5%;
         .home-cont{
-            border-radius: 10px 100px / 120px 100px;
+            border-radius: 10px ;
             padding: 5% 7%;
+            gap: 30px;
             flex-direction: column;
             .left-home-bnr{
                 justify-content: center;
@@ -95,7 +95,7 @@
         .home-cont{
             .left-home-bnr{
                 h1{
-                    font-size: 30px;
+                    font-size: 40px;
                 }
                 p{
                     font-size: 15px;

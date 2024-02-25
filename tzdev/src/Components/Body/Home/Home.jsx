@@ -14,7 +14,9 @@ export default function Home() {
                 <p>Welcome at my portfolio. I hope that you are going to find it very user friendly and have a great experience.  I tried to do my best creativity and fucntionality, have a great journey.</p>
             </div>
             <div className='right-home-bnr flex'>
-                <Lottie animationData={animationData} />
+                 <div className='animation-banner'>
+                  <Lottie animationData={animationData} />
+                 </div>
             </div>
         </div>
     </div>

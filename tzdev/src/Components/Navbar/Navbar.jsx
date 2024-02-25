@@ -14,12 +14,38 @@ export default function Navbar() {
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive_nav')
   }
+    const setDarkMode = () => {
+      document.querySelector("body").setAttribute('data-theme', 'dark')
+      localStorage.setItem("selectedTheme", "dark")
+    }
+    
+    const setLightMode = () => {
+      document.querySelector("body").setAttribute('data-theme', 'light')
+      localStorage.setItem("selectedTheme", "light")
+    }
+
+
+    const toggletTheme = e => {
+      if(e.target.checked) setDarkMode();
+      else setLightMode();
+    }
+  
+    const selectedTheme = localStorage.getItem("selectedTheme");
+
+    if(selectedTheme === "dark"){
+      setDarkMode()
+    }
 
   return (
     <BrowserRouter>
       <header className='nav-cont flex'>
           <div className='logo flex'>
-              <h3>TZ</h3><img src={Logo} alt="" />
+              <h3>TZ</h3>
+              {selectedTheme === 'light' ? (
+              <img src={LogoLight} alt="" />
+            ) : (
+              <img src={LogoDark} alt="" />
+            )}
           </div>
           <nav className='flex' ref={navRef}>
             <div className='nav-data flex'>
@@ -41,7 +67,11 @@ export default function Navbar() {
               <div className='hamburger'>
                 <Hamburger color='#374151' onToggle={showNavbar}/>
               </div>
-                <input type="checkbox" id='darkmode-toggle'/>
+                <input 
+                type="checkbox" 
+                id='darkmode-toggle' 
+                onChange={toggletTheme} 
+                defaultChecked={selectedTheme === "dark"}/>
                     <label htmlFor="darkmode-toggle">
                     </label>
               </div>

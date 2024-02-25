@@ -2,7 +2,6 @@ header{
     position: sticky;
     z-index: 100;
     top: 0;
-    background-color: white;
     box-shadow: 1px #242424;
 }
 
@@ -10,13 +9,11 @@ header{
     height: max(70px , 1vh);
     justify-content: space-between;
     padding: var(--def-padding);
-    
+    color: var(--body_color);
     .logo{
         h3{
             font-family: 'PopinsBold';
             font-size: 30px;
-            color: var(--font-color);
-
         }
         gap: 10px;
         img{
@@ -32,7 +29,7 @@ header{
             }
             h3{
                 font-family: 'PopinsMedium';
-                color: var(--font-color);
+                color: var(--body_color);
                 font-size: 19px;
                 font-weight: 500;
                 transition: color 0.3s ease;
@@ -63,6 +60,7 @@ header{
                     width: 120px;
                     top: 40px;
                     z-index: 100;
+                    fill: var(--body_color);
                 }
                 .sun{
                     top: 5px;
