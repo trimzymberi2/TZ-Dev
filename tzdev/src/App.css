@@ -35,9 +35,8 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--body_bg);
+  background: var(--body_bg);
   color: var(--body_color);
-  transition: all 0.3s ease-in-out;
 }
 * {
   margin: 0;

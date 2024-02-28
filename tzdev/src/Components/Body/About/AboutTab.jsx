@@ -38,6 +38,10 @@ export default function AboutTab() {
             url: JavaScript
         },
         {
+            name: 'Sass',
+            url: Sass
+        },
+        {
             name: 'BootStrap',
             url: BootStrap
         },
@@ -48,10 +52,6 @@ export default function AboutTab() {
         {
             name: 'Vite',
             url: Vite
-        },
-        {
-            name: 'Sass',
-            url: Sass
         },
     ])
     const [BackEndData, setBackEndData] = useState([

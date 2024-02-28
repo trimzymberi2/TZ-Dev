@@ -12,7 +12,7 @@ export default function About() {
           </div>
           <div className='about-scnd-banner flex'>
             <h1 className='animate'>Hi! my name is <span className='Grdtext'>Trim Zymberi</span> </h1>
-            <p className='desc animate'>I'm student of Computer Science and Engineering at UBT.  I'm in the last year of studies, specializing web programming. I have powerfull skills in software engineering and programing such as: Front-end, back-end and data</p>
+            <p className='desc animate'>I am a final-year Computer Science and Engineering student at UBT, specializing in web programming. . My focus is on web programming and software development. I know my way around both front-end and back-end development, as well as handling data.</p>
           </div>
         </div>
     </div>

@@ -6,6 +6,7 @@ import About from './About/About'
 import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
 import AboutTab from './About/AboutTab'
+import ProjectSlider from './Projects/ProjectSlider'
 
 export default function Body() {
   return (
@@ -17,6 +18,7 @@ export default function Body() {
         <Projects/>
         <Contact/>
         <HomeSlider/>
+        <ProjectSlider/>
       </div>
     </div>
   )

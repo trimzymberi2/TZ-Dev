@@ -21,11 +21,11 @@ export default function Projects(props) {
    
   return (
     <div className='projects-cont' id='Projects'>
-      <div className='projects-slider '>
+      <div className='projects-slider'>
 
       </div>
        <div className='projects-statistics flex Grdtext2'>
-          <div className='statistics-frst flex '>
+          <div className='statistics-frst flex'>
               <h1><Number n={10} /></h1>
               <p>Finished projects</p>
           </div>

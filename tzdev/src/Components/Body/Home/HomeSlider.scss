@@ -3,6 +3,7 @@
     padding: var(--def-padding);
     h1{
         text-align: center;
+        color: var(--body_color);
     }
     .card{
         margin-top: 2em;
@@ -15,6 +16,8 @@
         }
         h1{
             font-size: 25px;
+            color: var(--body_color);
+
         }
     }
 }

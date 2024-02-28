@@ -30,7 +30,6 @@
             p{
                 width: 68%;
                 font-size: var(--desc-text);
-                color: var(--desc-color);
             }
         }
         .right-home-bnr {
@@ -61,9 +60,7 @@
 
 @media only screen and (max-width: 1024px){
     .home-wrapper{
-        margin: 1% 5%;
         .home-cont{
-            border-radius: 10px ;
             padding: 5% 7%;
             gap: 30px;
             flex-direction: column;
@@ -95,7 +92,7 @@
         .home-cont{
             .left-home-bnr{
                 h1{
-                    font-size: 40px;
+                    font-size: 30px;
                 }
                 p{
                     font-size: 15px;

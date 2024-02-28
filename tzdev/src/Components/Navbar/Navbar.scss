@@ -5,11 +5,17 @@ header{
     box-shadow: 1px #242424;
 }
 
+.nav-cont.active{
+    background: var(--body_bg);
+}
+
 .nav-cont{
+    transition: all 0.3s ease-in-out;
     height: max(70px , 1vh);
     justify-content: space-between;
     padding: var(--def-padding);
     color: var(--body_color);
+    background: var(--banner_bg);
     .logo{
         h3{
             font-family: 'PopinsBold';
@@ -139,7 +145,7 @@ header{
                 width: 100%;
                 transition: 1s;
                 transform: translateY(-120vh);
-                background: linear-gradient(90deg,#556270,#ff6b6b);
+                background: var(--banner_bg);
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;

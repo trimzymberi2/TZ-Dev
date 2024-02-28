@@ -1,5 +1,5 @@
 .footer-cnt{
-    background-color: black;
+    background-color: var(--banner_active);
     flex-direction: column;
     padding: var(--def-padding);
     .footer-frst-banner{
@@ -7,7 +7,7 @@
         .footer-logo{
             h3{
                 font-size: 30px;
-                color: white;
+                color: var(body_color);
             }
             gap: 10px;
             img{
@@ -19,7 +19,7 @@
                 font-weight: 300;
                 font-family: 'PopinsMedium';
                 font-size: 16px;
-                color: white;
+                color: var(body_color);
                 transition: color 0.3s ease;
                 &:hover{
                     color: var(--hover-color);
@@ -33,9 +33,9 @@
     .footer-scnd-banner{
         margin-top: 2em;
         padding-top: 2em;
-        border-top: 1px solid #f9f9f9;
+        border-top: 1px solid #7d7d7d;
         p{
-            color: #74796e;
+            color: var(body_color);
             font-size: 16px;
         }
     }

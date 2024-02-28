@@ -15,10 +15,20 @@ export default function Navbar() {
   };
 
   const { selectedTheme, setDarkMode, setLightMode, toggletTheme } = useTheme();
+  const [navbar, setnavbar] = useState(false);
+
+  const changeBackground = () => {
+    if(window.scrollY >= 70){
+      setnavbar(true);
+    }else{
+      setnavbar(false);
+    }
+  }
+  window.addEventListener('scroll',changeBackground)
 
   return (
     <BrowserRouter>
-      <header className='nav-cont flex'>
+      <header className={navbar ? 'nav-cont active flex' : 'nav-cont flex'}>
         <div className='logo flex'>
           <h3>TZ</h3>
           {selectedTheme === 'dark' ? (
@@ -45,7 +55,7 @@ export default function Navbar() {
           </nav>
               <div className='nav-right flex'>
               <div className='hamburger'>
-                <Hamburger color='#374151' onToggle={showNavbar}/>
+                <Hamburger color={selectedTheme === 'dark' ? '#ffffff' : 'black'} onToggle={showNavbar}/>
               </div>
                 <input 
                 type="checkbox" 
