@@ -20,7 +20,7 @@ export default function Projects(props) {
   }
    
   return (
-    <div className='projects-cont' id='Projects'>
+    <div className='projects-cont'>
       <div className='projects-slider'>
 
       </div>

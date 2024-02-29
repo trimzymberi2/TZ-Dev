@@ -8,6 +8,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Git from '../../images/github.png'
 import live from '../../images/DarkLive.png'
 import deltarg from '../../images/deltarg.png'
+import kartell from '../../images/kartell.png'
+import calzone from '../../images/Calzone.png'
+import tzdev from '../../images/tzdev.png'
+
 
 
 
@@ -25,7 +29,7 @@ export default function ProjectSlider() {
         );    
     
     var settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -36,15 +40,15 @@ export default function ProjectSlider() {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 2,
+              slidesToScroll: 1,
               dots: true
             }
           },
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 2,
               initialSlide: 2
             }
@@ -59,8 +63,9 @@ export default function ProjectSlider() {
         ]
       };
   return (
-    <div className='pslider-wrapper'>
+    <div className='pslider-wrapper' id='Projects'>
         <div className='pslider-cont'>
+            <h1 className='flex'>Projects</h1>
             <Slider {...settings}>
             {data.map((d) => 
                <div className='pslider-card'>
@@ -70,12 +75,12 @@ export default function ProjectSlider() {
 
                     <div className='pslider-info flex'>
                         <h3>{d.name}</h3>
-                        <p>Section: {d.departament}</p>
-                        <p>Technology: {d.technology}</p>
-                        <p>About: {d.info}</p>
+                        <p><label>Section:</label> {d.departament}</p>
+                        <p><label>Technology:</label> {d.technology}</p>
+                        <p><label>About:</label> {d.info}</p>
                         <div className='pslider-btns flex'>
-                        <button className='flex'><img src={Git}/></button>
-                        <button><img src={live} alt="" /></button>
+                        <a className='flex' href={d.git}  target="_blank"><img src={Git}/></a>
+                        <a href={d.host}  target="_blank"><img src={live} alt="" /></a>
                         </div>
                     </div>
                </div>
@@ -88,32 +93,48 @@ export default function ProjectSlider() {
 
 const data = [
     {
+        name: 'DeltaRg',
+        img: deltarg,
+        departament: 'Front-End',
+        technology: 'React, HTML, SCSS',
+        info: 'Advertising website about an Engineering Company.',
+        git: 'https://github.com/trimzymberi2/DeltaRg',
+        host: 'https://deltarg.netlify.app'
+    },
+    {
         name: 'Prese Eatery',
         img: prese,
         departament: 'Full-Stack',
         technology: 'React, Tailwind, Laravel',
-        info: 'Fast food ordering and managing orders, sales, customers, employees',
+        info: 'Fast food ordering web application managing orders, sales, customers, employees.',
+        git: 'https://github.com/TrimZymberi/AT-Ecommercee',
+        host: ''
     },
     {
-        name: 'DeltaRg',
-        img: deltarg,
+        name: 'Kartell',
+        img: kartell,
+        departament: 'Full-Stack',
+        technology: 'PHP, HTML, CSS, JavaScript',
+        info: 'E-Commerce selling furnitures managing orders, customers and employes.',
+        git: 'https://github.com/TrimZymberi/Web',
+        host: ''
+    },
+    {
+        name: 'Calzone Restaurant',
+        img: calzone,
+        departament: 'Data',
+        technology: 'SQL',
+        info: 'Restaurant menagment system, projected, designed, implementet in MSSQL.',
+        git: 'https://github.com/trimzymberi2/Calzone',
+        host: '/'
+    },
+    {
+        name: 'TZ-Dev',
+        img: tzdev,
         departament: 'Front-End',
-        technology: 'React, HTML, CSS',
-        info: 'Advertising website about an Engineering Company',
-    },
-    {
-        name: 'Prese3',
-        img: gfc,
-        info: 'Prese fast food managment',
-    },
-    {
-        name: 'Prese4',
-        img: gfc,
-        info: 'Prese fast food managment',
-    },
-    {
-        name: 'Prese5',
-        img: gfc,
-        info: 'Prese fast food managment',
+        technology: 'React, HTML, SCSS',
+        info: 'Personal Portfolio',
+        git: 'https://github.com/trimzymberi2/TZ-Dev',
+        host: 'https://tz-dev.netlify.app'
     },
 ]

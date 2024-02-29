@@ -57,7 +57,7 @@ body{
 }
 
 .Grdtext2{
-  background:linear-gradient(90deg, #FEB700, #D32828);
+  background:var(--grd_color);
   -webkit-background-clip: text;
   color: transparent;
 }

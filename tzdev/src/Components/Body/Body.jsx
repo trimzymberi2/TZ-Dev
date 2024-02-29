@@ -15,10 +15,10 @@ export default function Body() {
         <Home/>
         <About/>
         <AboutTab/>
+        <ProjectSlider/>
         <Projects/>
         <Contact/>
         <HomeSlider/>
-        <ProjectSlider/>
       </div>
     </div>
   )
