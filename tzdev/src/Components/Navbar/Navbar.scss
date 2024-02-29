@@ -17,6 +17,8 @@ header{
     color: var(--body_color);
     background: var(--banner_bg);
     .logo{
+        position: relative;
+        z-index: 1;
         h3{
             font-family: 'PopinsBold';
             font-size: 30px;
@@ -159,7 +161,6 @@ header{
                     h3{
                         color: antiquewhite;
                         font-size: 40px;
-                        border-bottom: 1px dashed rgb(212, 206, 206);
                         &:first-child{
                             width: 60%;
                         }
