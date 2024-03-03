@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
         </div>
         <div className='footer-scnd-banner'>
-            <p>This website is powered by react JS the design and code is all self-made by @Trim Zymberi</p>
+            <p>This website is powered by react JS, no frameworks were used in developing this website. The design and code is all self-made.by @Trim Zymberi</p>
         </div>
     </div>
   )

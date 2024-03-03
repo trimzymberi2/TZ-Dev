@@ -67,7 +67,7 @@ export default function HomeSlider(props) {
     <div className='homeSlider-cont tittle'>
         <h1 className='flex tittle'>Technologies and tools used for this website</h1>
         <Carousel
-            swipeable={false}
+            swipeable={true}
             draggable={true}
             showDots={false}
             responsive={responsive}
