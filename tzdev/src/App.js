@@ -1,8 +1,11 @@
-import { createContext, useState } from 'react';
+import { createContext, useStatem, useState} from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Body from './Components/Body/Body';
 import Footer from './Components/Footer';
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('G-CH9HFR7Z40');
 
 export const ThemeContext = createContext(null); 
 

@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Lottie from 'lottie-react'
 import animationData from '../../../Asets/Animation - 1708548113142.json'
 import './Home.scss'
 import img from '../../images/Saly-13.png'
 import HomeSlider from './HomeSlider'
+import ReactGA from 'react-ga'
+
+
 
 export default function Home() {
+  
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+  
   return (
     <div className='home-wrapper' id='Home'>
         <div className='home-cont flex animate'>

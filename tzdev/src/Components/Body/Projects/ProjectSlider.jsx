@@ -11,6 +11,9 @@ import deltarg from '../../images/deltarg.png'
 import kartell from '../../images/kartell.png'
 import calzone from '../../images/Calzone.png'
 import tzdev from '../../images/tzdev.png'
+import tzdevfigma from '../../images/tzdev-figma.png'
+import deltargfigma from '../../images/deltarg-figma.png'
+
 
 
 
@@ -136,5 +139,23 @@ const data = [
         info: 'Personal Portfolio',
         git: 'https://github.com/trimzymberi2/TZ-Dev',
         host: 'https://tz-dev.netlify.app'
+    },
+    {
+      name: 'DeltaRg',
+      img: deltargfigma,
+      departament: 'UI/UX',
+      technology: 'Figma',
+      info: 'Advertising website about an Engineering Company.',
+      git: 'https://www.figma.com/community/file/1346939435362261949/deltarg',
+      host: 'https://www.figma.com/community/file/1346939435362261949/deltarg'
+    },
+    {
+        name: 'TZ-Dev',
+        img: tzdevfigma,
+        departament: 'UI/UX',
+        technology: 'Figma',
+        info: 'Personal Portfolio',
+        git: 'https://www.figma.com/community/file/1346940589824033726/tz-dev',
+        host: 'https://www.figma.com/community/file/1346940589824033726/tz-dev'
     },
 ]
