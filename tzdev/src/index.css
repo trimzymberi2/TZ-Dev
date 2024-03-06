@@ -3,6 +3,7 @@
   --body_color: #1f2937;
   --link_color: navy;
   --banner_bg: linear-gradient(90deg, rgba(52, 148, 230, 10), rgba(236, 110, 173, 0.9));
+  --scroller_bg: rgb(236, 110, 173);
   --banner_active: rgb(234, 233, 233);
   --tab_bg: #8eb6cf;
   --tab_active: white;
@@ -15,6 +16,8 @@
   --body_color: rgb(213, 211, 211);
   --link_color: rgb(11, 193, 230);
   --banner_bg: linear-gradient(90deg, rgba(7, 11, 106, 100), rgba(60, 29, 44, 0.9));
+  --scroller_bg: rgb(60, 29, 45);
+
   --banner_active: #1f2937;
   --tab_bg: linear-gradient(135deg, #426074 0%, #44466c 100%);
   --tab_active: rgb(72, 200, 255);
